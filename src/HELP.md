@@ -39,4 +39,4 @@ The following guides illustrate how to use some features concretely:
 #### Ref. links
 * [Spring Boot With H2 Database](https://www.baeldung.com/spring-boot-h2-database)
 * [Testing in Spring Boot](https://www.baeldung.com/spring-boot-testing)
-
+* [@DataJpaTest example for Spring Data Repository Unit Test](https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/)
