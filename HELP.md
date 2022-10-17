@@ -1,10 +1,15 @@
 # Read Me First
-The following was discovered as part of building this project:
+A test project - 
+Implement a Restful task list API as well as run this application in container.
 
-* The original package name 'com.bluedream.spring-data.herbinate-nplus1' is invalid and this project uses 'com.bluedream.springdata.herbinatenplus1' instead.
+- Runtime Environment Requirement
+  - JDK - Java 17
+  - Build Tool - Maven 3
+  - IDE Tool - Intellij IDEA
+  - Database - H2 In-memory DB  
+  - Docker
 
 # Getting Started
-
 # Build
 - Build Jar file
 > mvn clean package -Dmaven.test.skip=true
