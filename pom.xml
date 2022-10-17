@@ -68,11 +68,20 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <!--
                 <configuration>
-                    <!--<imageName>buildpacks-${project.artifactId}:${project.version}</imageName>-->
                     <image>
                         <name>docker.io/charlotte007/buildpacks-${project.artifactId}:${project.version}</name>
                     </image>
+                </configuration>
+                -->
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skipTests>true</skipTests>
                 </configuration>
             </plugin>
 
@@ -86,7 +95,7 @@
                         <image>openjdk:17</image>
                     </from>
                     <to>
-                        <image>${project.artifactId}:${project.version}</image>
+                        <image>docker.io/charlotte007/${project.artifactId}:${project.version}</image>
                     </to>
                     <!--容器相關的属性 -->
                     <container>

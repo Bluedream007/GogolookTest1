@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
 
-    List<Task> findAllBy();
+    // List<Task> findAllBy();
 
     public Task findByName(String name);
 

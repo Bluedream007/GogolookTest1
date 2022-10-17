@@ -6,16 +6,40 @@ The following was discovered as part of building this project:
 # Getting Started
 
 # Build
+- Build Jar file
+> mvn clean package -Dmaven.test.skip=true
+- Build Docker image
 > mvn compile jib:dockerBuild
 
 # Docker Command 
 * Run
+- Get image from local
 >  docker container run --detach --publish 8080:8081 --name gogolook-test1 gogolook-test1:0.0.1
+- Get image from Docker Hub
+> docker run -p 8081:8081 --name gogolook-test1 charlotte007/gogolook-test1:0.0.1
+or 
+> docker container run --detach --publish 8080:8081 --name gogolook-test1 charlotte007/gogolook-test1:0.0.1
 
 ### Run & Test
-* [Default link](http://localhost:8081/)
-* [Accessing the H2 Console](http://localhost:8081/h2-console/)
+* [Default Test Page](http://localhost:8081/)
 * [The default page of Swagger](http://localhost:8081/swagger-ui/)
+* [Accessing the H2 Console](http://localhost:8081/h2-console/)
+  - ID: sa, Password: password
+  
+
+### Test Data Example
+1.POST /task  (create task)
+{
+"name": "買午餐2"
+}
+2.PUT /task/1 (update task)
+{
+"name": "買早餐",
+"status": true,
+"id": 1
+}
+3.DELETE /task/1 (delete task)
+
 
 
 
