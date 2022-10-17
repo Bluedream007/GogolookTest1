@@ -33,17 +33,17 @@ or
   
 
 ### Test Data Example
-1.POST /task  (create task)
+- 1.POST /task  (create task)
 {
 "name": "買午餐2"
 }
-2.PUT /task/1 (update task)
+- 2.PUT /task/1 (update task)
 {
 "name": "買早餐",
 "status": true,
 "id": 1
 }
-3.DELETE /task/1 (delete task)
+- 3.DELETE /task/1 (delete task)
 
 
 
